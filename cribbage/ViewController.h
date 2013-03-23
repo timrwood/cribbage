@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
+#import "Match.h"
 
-@interface ViewController : GLKViewController
-
+@interface ViewController : GLKViewController {
+@private;
+    Match *_match;
+}
 @end

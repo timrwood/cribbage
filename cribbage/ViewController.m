@@ -112,6 +112,9 @@ GLfloat gCubeVertexData[216] =
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
+    _match = [[Match alloc] init];
+    [_match start];
+    
     [self setupGL];
 }
 
@@ -213,6 +216,8 @@ GLfloat gCubeVertexData[216] =
     _modelViewProjectionMatrix = GLKMatrix4Multiply(projectionMatrix, modelViewMatrix);
     
     _rotation += self.timeSinceLastUpdate * 0.5f;
+    
+    [_match update];
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect

@@ -28,6 +28,18 @@
 		158BABA216FDF3EF00D9D0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158BAB7216FDF3EF00D9D0E5 /* Foundation.framework */; };
 		158BABAA16FDF3EF00D9D0E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 158BABA816FDF3EF00D9D0E5 /* InfoPlist.strings */; };
 		158BABAD16FDF3EF00D9D0E5 /* cribbageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABAC16FDF3EF00D9D0E5 /* cribbageTests.m */; };
+		158BABBE16FE00B400D9D0E5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABBD16FE00B400D9D0E5 /* Card.m */; };
+		158BABC116FE00C500D9D0E5 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABC016FE00C500D9D0E5 /* Deck.m */; };
+		158BABC416FE00CF00D9D0E5 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABC316FE00CF00D9D0E5 /* Hand.m */; };
+		158BABC816FE00FF00D9D0E5 /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABC716FE00FF00D9D0E5 /* Match.m */; };
+		158BABCB16FE010800D9D0E5 /* MatchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABCA16FE010800D9D0E5 /* MatchState.m */; };
+		158BABCE16FE011100D9D0E5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABCD16FE011100D9D0E5 /* Player.m */; };
+		158BABD116FE012B00D9D0E5 /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABD016FE012B00D9D0E5 /* AIPlayer.m */; };
+		158BABD416FE013600D9D0E5 /* LocalPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABD316FE013600D9D0E5 /* LocalPlayer.m */; };
+		158BABD716FE014000D9D0E5 /* RemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABD616FE014000D9D0E5 /* RemotePlayer.m */; };
+		158BABE016FE016C00D9D0E5 /* Scoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABDF16FE016C00D9D0E5 /* Scoreboard.m */; };
+		158BABE316FE08AA00D9D0E5 /* Street.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABE216FE08AA00D9D0E5 /* Street.m */; };
+		158BABE616FE08C700D9D0E5 /* HandScorer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158BABE516FE08C700D9D0E5 /* HandScorer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +80,31 @@
 		158BABA916FDF3EF00D9D0E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		158BABAB16FDF3EF00D9D0E5 /* cribbageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cribbageTests.h; sourceTree = "<group>"; };
 		158BABAC16FDF3EF00D9D0E5 /* cribbageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cribbageTests.m; sourceTree = "<group>"; };
+		158BABBC16FE00B400D9D0E5 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		158BABBD16FE00B400D9D0E5 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		158BABBF16FE00C500D9D0E5 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		158BABC016FE00C500D9D0E5 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		158BABC216FE00CF00D9D0E5 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		158BABC316FE00CF00D9D0E5 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		158BABC516FE00E400D9D0E5 /* CardHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardHolder.h; sourceTree = "<group>"; };
+		158BABC616FE00FF00D9D0E5 /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		158BABC716FE00FF00D9D0E5 /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		158BABC916FE010700D9D0E5 /* MatchState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchState.h; sourceTree = "<group>"; };
+		158BABCA16FE010800D9D0E5 /* MatchState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchState.m; sourceTree = "<group>"; };
+		158BABCC16FE011100D9D0E5 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		158BABCD16FE011100D9D0E5 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		158BABCF16FE012B00D9D0E5 /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
+		158BABD016FE012B00D9D0E5 /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
+		158BABD216FE013600D9D0E5 /* LocalPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalPlayer.h; sourceTree = "<group>"; };
+		158BABD316FE013600D9D0E5 /* LocalPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalPlayer.m; sourceTree = "<group>"; };
+		158BABD516FE014000D9D0E5 /* RemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemotePlayer.h; sourceTree = "<group>"; };
+		158BABD616FE014000D9D0E5 /* RemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemotePlayer.m; sourceTree = "<group>"; };
+		158BABDE16FE016C00D9D0E5 /* Scoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
+		158BABDF16FE016C00D9D0E5 /* Scoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scoreboard.m; sourceTree = "<group>"; };
+		158BABE116FE08AA00D9D0E5 /* Street.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Street.h; sourceTree = "<group>"; };
+		158BABE216FE08AA00D9D0E5 /* Street.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Street.m; sourceTree = "<group>"; };
+		158BABE416FE08C700D9D0E5 /* HandScorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandScorer.h; sourceTree = "<group>"; };
+		158BABE516FE08C700D9D0E5 /* HandScorer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandScorer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +136,7 @@
 		158BAB6416FDF3EF00D9D0E5 = {
 			isa = PBXGroup;
 			children = (
+				158BABB616FE008E00D9D0E5 /* code */,
 				158BAB7A16FDF3EF00D9D0E5 /* cribbage */,
 				158BABA516FDF3EF00D9D0E5 /* cribbageTests */,
 				158BAB6F16FDF3EF00D9D0E5 /* Frameworks */,
@@ -175,6 +213,70 @@
 				158BABA816FDF3EF00D9D0E5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		158BABB616FE008E00D9D0E5 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				158BABB716FE008E00D9D0E5 /* cards */,
+				158BABB816FE008E00D9D0E5 /* match */,
+				158BABB916FE008E00D9D0E5 /* players */,
+				158BABBB16FE008E00D9D0E5 /* scores */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		158BABB716FE008E00D9D0E5 /* cards */ = {
+			isa = PBXGroup;
+			children = (
+				158BABBC16FE00B400D9D0E5 /* Card.h */,
+				158BABBD16FE00B400D9D0E5 /* Card.m */,
+				158BABC516FE00E400D9D0E5 /* CardHolder.h */,
+				158BABBF16FE00C500D9D0E5 /* Deck.h */,
+				158BABC016FE00C500D9D0E5 /* Deck.m */,
+				158BABC216FE00CF00D9D0E5 /* Hand.h */,
+				158BABC316FE00CF00D9D0E5 /* Hand.m */,
+				158BABE116FE08AA00D9D0E5 /* Street.h */,
+				158BABE216FE08AA00D9D0E5 /* Street.m */,
+			);
+			path = cards;
+			sourceTree = "<group>";
+		};
+		158BABB816FE008E00D9D0E5 /* match */ = {
+			isa = PBXGroup;
+			children = (
+				158BABC616FE00FF00D9D0E5 /* Match.h */,
+				158BABC716FE00FF00D9D0E5 /* Match.m */,
+				158BABC916FE010700D9D0E5 /* MatchState.h */,
+				158BABCA16FE010800D9D0E5 /* MatchState.m */,
+			);
+			path = match;
+			sourceTree = "<group>";
+		};
+		158BABB916FE008E00D9D0E5 /* players */ = {
+			isa = PBXGroup;
+			children = (
+				158BABCF16FE012B00D9D0E5 /* AIPlayer.h */,
+				158BABD016FE012B00D9D0E5 /* AIPlayer.m */,
+				158BABD216FE013600D9D0E5 /* LocalPlayer.h */,
+				158BABD316FE013600D9D0E5 /* LocalPlayer.m */,
+				158BABCC16FE011100D9D0E5 /* Player.h */,
+				158BABCD16FE011100D9D0E5 /* Player.m */,
+				158BABD516FE014000D9D0E5 /* RemotePlayer.h */,
+				158BABD616FE014000D9D0E5 /* RemotePlayer.m */,
+			);
+			path = players;
+			sourceTree = "<group>";
+		};
+		158BABBB16FE008E00D9D0E5 /* scores */ = {
+			isa = PBXGroup;
+			children = (
+				158BABDE16FE016C00D9D0E5 /* Scoreboard.h */,
+				158BABDF16FE016C00D9D0E5 /* Scoreboard.m */,
+				158BABE416FE08C700D9D0E5 /* HandScorer.h */,
+				158BABE516FE08C700D9D0E5 /* HandScorer.m */,
+			);
+			path = scores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +395,18 @@
 				158BAB8116FDF3EF00D9D0E5 /* main.m in Sources */,
 				158BAB8516FDF3EF00D9D0E5 /* AppDelegate.m in Sources */,
 				158BAB9216FDF3EF00D9D0E5 /* ViewController.m in Sources */,
+				158BABBE16FE00B400D9D0E5 /* Card.m in Sources */,
+				158BABC116FE00C500D9D0E5 /* Deck.m in Sources */,
+				158BABC416FE00CF00D9D0E5 /* Hand.m in Sources */,
+				158BABC816FE00FF00D9D0E5 /* Match.m in Sources */,
+				158BABCB16FE010800D9D0E5 /* MatchState.m in Sources */,
+				158BABCE16FE011100D9D0E5 /* Player.m in Sources */,
+				158BABD116FE012B00D9D0E5 /* AIPlayer.m in Sources */,
+				158BABD416FE013600D9D0E5 /* LocalPlayer.m in Sources */,
+				158BABD716FE014000D9D0E5 /* RemotePlayer.m in Sources */,
+				158BABE016FE016C00D9D0E5 /* Scoreboard.m in Sources */,
+				158BABE316FE08AA00D9D0E5 /* Street.m in Sources */,
+				158BABE616FE08C700D9D0E5 /* HandScorer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
