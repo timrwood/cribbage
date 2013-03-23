@@ -16,7 +16,7 @@
 #import "Hand.h"
 #import "Street.h"
 
-@interface Match : NSObject {
+@interface Match : NSObject <MatchStateDelegate> {
 @private;
     Deck *_deck;
     Hand *_crib;

@@ -10,4 +10,19 @@
 
 @implementation MatchState
 
+- (void)changeStateTo:(MatchStateType)state {
+    if (state != _state) {
+        state = _state;
+        [_delegate stateChangedTo:state];
+    }
+}
+
+- (BOOL)isState:(MatchStateType)state {
+    return _state == state;
+}
+
+- (MatchStateType)state {
+    return _state;
+}
+
 @end
