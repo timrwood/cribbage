@@ -53,4 +53,18 @@
 }
 
 
+#pragma mark -
+#pragma mark shuffle
+
+
+- (void)shuffle {
+    int count = [_heldCards count];
+    for (int i = 0; i < count; ++i) {
+        // Select a random element between i and end of array to swap with.
+        int n = (arc4random() % (count - i)) + i;
+        [_heldCards exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+}
+
+
 @end

@@ -25,7 +25,6 @@
     MatchState *_matchState;
     
     Scoreboard *_scoreboard;
-    HandScorer *_handScorer;
 }
 
 @property (nonatomic) Player *player0;

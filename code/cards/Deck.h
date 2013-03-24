@@ -23,4 +23,11 @@
 - (void)deal:(int)count toHolder:(NSObject <CardHolder> *)holder;
 
 
+#pragma mark -
+#pragma mark shuffle
+
+
+- (void)shuffle;
+
+
 @end

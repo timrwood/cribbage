@@ -24,6 +24,13 @@ typedef struct {
 
 
 #pragma mark -
+#pragma mark singleton
+
+
++ (HandScorer *)singleton;
+
+
+#pragma mark -
 #pragma mark score hand
 
 

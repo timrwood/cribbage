@@ -8,7 +8,24 @@
 
 #import "HandScorer.h"
 
+
+static HandScorer *_singleton = nil;
+
+
 @implementation HandScorer
+
+
+#pragma mark -
+#pragma mark singleton
+
+
++ (HandScorer *)singleton {
+	if (!_singleton) {
+        _singleton = [[self alloc] init];
+	}
+    
+	return _singleton;
+}
 
 
 #pragma mark -

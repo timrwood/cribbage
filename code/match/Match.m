@@ -17,7 +17,6 @@
         _crib = [[Hand alloc] init];
         _street = [[Street alloc] init];
         
-        _handScorer = [[HandScorer alloc] init];
         _scoreboard = [[Scoreboard alloc] init];
         
         _matchState = [[MatchState alloc] init];
@@ -72,6 +71,7 @@
 
 - (void)startDeal {
     NSLog(@"startDeal");
+    [_deck shuffle];
     [_deck deal:6 toHolder:_player0];
     [_deck deal:6 toHolder:_player1];
 }
@@ -94,7 +94,7 @@
 }
 
 - (void)updateDiscard {
-    NSLog(@"updateDiscard");
+//    NSLog(@"updateDiscard");
     if ([_player0 gaveCardsToCrib:_crib] && [_player1 gaveCardsToCrib:_crib]) {
         [_matchState changeStateTo:STATE_BANTER];
     }
