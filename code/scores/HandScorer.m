@@ -16,13 +16,15 @@
 
 
 - (HandScore)scoreHand:(Hand *)hand withFlipCard:(Card *)card {
+    return [self scoreHandWithA:[hand cardAtIndex:0]
+                           andB:[hand cardAtIndex:1]
+                           andC:[hand cardAtIndex:2]
+                           andD:[hand cardAtIndex:3]
+                           andE:card];
+}
+
+- (HandScore)scoreHandWithA:(Card *)a andB:(Card *)b andC:(Card *)c andD:(Card *)d andE:(Card *)e {
     HandScore score;
-    
-    Card *a = [hand cardAtIndex:0];
-    Card *b = [hand cardAtIndex:1];
-    Card *c = [hand cardAtIndex:2];
-    Card *d = [hand cardAtIndex:3];
-    Card *e = card;
     
     score.fifteens = [self scoreFifteensWithA:[a rank10]
                                          andB:[b rank10]

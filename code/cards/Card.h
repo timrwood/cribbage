@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Card : NSObject {
-@private;
-    int _index;
-}
+@interface Card : NSObject
 
 - (id)initWithIndex:(int)index;
+
+@property (nonatomic) int index;
 
 - (int)rank;
 - (int)suit;

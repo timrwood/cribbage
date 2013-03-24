@@ -28,6 +28,7 @@ typedef struct {
 
 
 - (HandScore)scoreHand:(Hand *)hand withFlipCard:(Card *)card;
+- (HandScore)scoreHandWithA:(Card *)a andB:(Card *)b andC:(Card *)c andD:(Card *)d andE:(Card *)e;
 
 
 #pragma mark -

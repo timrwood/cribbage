@@ -8,6 +8,16 @@
 
 #import "Player.h"
 
-@interface AIPlayer : Player
+@interface AIPlayer : Player {
+@private;
+    int *known;
+    int *unknown;
+    
+    Card *helperA;
+    Card *helperB;
+    Card *helperC;
+    Card *helperD;
+    Card *helperE;
+}
 
 @end
