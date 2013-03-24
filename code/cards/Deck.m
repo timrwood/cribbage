@@ -14,6 +14,7 @@
     self = [super init];
     if (self) {
         _cards = [[NSMutableArray alloc] init];
+        _heldCards = [[NSMutableArray alloc] init];
         
         for (int i = 0; i < 52; i++) {
             Card *card = [[Card alloc] initWithIndex:i];
@@ -23,6 +24,11 @@
     }
     return self;
 }
+
+
+#pragma mark -
+#pragma mark give / recieve
+
 
 - (void)receiveCard:(Card *)card {
     if (![_heldCards containsObject:card]) {
@@ -34,5 +40,17 @@
     [_heldCards removeObject:card];
     [holder receiveCard:card];
 }
+
+
+#pragma mark -
+#pragma mark deal
+
+
+- (void)deal:(int)count toHolder:(NSObject <CardHolder> *)holder {
+    for (int i = 0; i < count; i++) {
+        [self giveCard:[_heldCards objectAtIndex:0] toHolder:holder];
+    }
+}
+
 
 @end

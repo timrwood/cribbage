@@ -42,6 +42,7 @@
 }
 
 - (void)start {
+    NSLog(@"start");
     [_matchState changeStateTo:STATE_DEAL];
 }
 
@@ -55,11 +56,13 @@
 
 
 - (void)startGameNotStarted {
+    NSLog(@"startGameNotStarted");
     
 }
 
 - (void)updateGameNotStarted {
-    
+    NSLog(@"updateGameNotStarted");
+    [_matchState changeStateTo:STATE_DEAL];
 }
 
 
@@ -68,11 +71,14 @@
 
 
 - (void)startDeal {
-    
+    NSLog(@"startDeal");
+    [_deck deal:6 toHolder:_player0];
+    [_deck deal:6 toHolder:_player1];
 }
 
 - (void)updateDeal {
-    
+    NSLog(@"updateDeal");
+    [_matchState changeStateTo:STATE_DISCARD];
 }
 
 
@@ -81,11 +87,17 @@
 
 
 - (void)startDiscard {
+    NSLog(@"startDiscard");
+    [_player0 startDiscardToCrib];
+    [_player1 startDiscardToCrib];
     
 }
 
 - (void)updateDiscard {
-    
+    NSLog(@"updateDiscard");
+    if ([_player0 gaveCardsToCrib:_crib] && [_player1 gaveCardsToCrib:_crib]) {
+        [_matchState changeStateTo:STATE_BANTER];
+    }
 }
 
 
@@ -94,10 +106,12 @@
 
 
 - (void)startBanter {
+    NSLog(@"startBanter");
     
 }
 
 - (void)updateBanter {
+    NSLog(@"updateBanter");
     
 }
 
@@ -107,10 +121,12 @@
 
 
 - (void)startRestoreHands {
+    NSLog(@"startRestoreHands");
     
 }
 
 - (void)updateRestoreHands {
+    NSLog(@"updateRestoreHands");
     
 }
 
@@ -120,10 +136,12 @@
 
 
 - (void)startScorePone {
+    NSLog(@"startScorePone");
     
 }
 
 - (void)updateScorePone {
+    NSLog(@"updateScorePone");
     
 }
 
@@ -133,10 +151,12 @@
 
 
 - (void)startScoreDealer {
+    NSLog(@"startScoreDealer");
     
 }
 
 - (void)updateScoreDealer {
+    NSLog(@"updateScoreDealer");
     
 }
 
@@ -146,10 +166,12 @@
 
 
 - (void)startScoreCrib {
+    NSLog(@"startScoreCrib");
     
 }
 
 - (void)updateScoreCrib {
+    NSLog(@"updateScoreCrib");
     
 }
 
@@ -159,10 +181,12 @@
 
 
 - (void)startRestoreDeck {
+    NSLog(@"startRestoreDeck");
     
 }
 
 - (void)updateRestoreDeck {
+    NSLog(@"updateRestoreDeck");
     
 }
 
@@ -172,10 +196,12 @@
 
 
 - (void)startShuffle {
+    NSLog(@"startShuffle");
     
 }
 
 - (void)updateShuffle {
+    NSLog(@"updateShuffle");
     
 }
 
@@ -185,10 +211,12 @@
 
 
 - (void)startGameEnded {
+    NSLog(@"startGameEnded");
     
 }
 
 - (void)updateGameEnded {
+    NSLog(@"updateGameEnded");
     
 }
 

@@ -29,4 +29,15 @@
     [holder receiveCard:card];
 }
 
+
+#pragma mark -
+#pragma mark accessing cards
+
+
+- (Card *)cardAtIndex:(int)index {
+    assert(index > -1);
+    assert(index < [_cards count]);
+    return [_cards objectAtIndex:index];
+}
+
 @end

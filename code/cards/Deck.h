@@ -16,4 +16,11 @@
     NSMutableArray *_heldCards;
 }
 
+#pragma mark -
+#pragma mark deal
+
+
+- (void)deal:(int)count toHolder:(NSObject <CardHolder> *)holder;
+
+
 @end

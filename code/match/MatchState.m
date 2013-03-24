@@ -12,7 +12,7 @@
 
 - (void)changeStateTo:(MatchStateType)state {
     if (state != _state) {
-        state = _state;
+        _state = state;
         [_delegate stateChangedTo:state];
     }
 }

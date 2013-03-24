@@ -15,4 +15,12 @@
     NSMutableArray *_cards;
 }
 
+
+#pragma mark -
+#pragma mark accessing cards
+
+
+- (Card *)cardAtIndex:(int)index;
+
+
 @end
