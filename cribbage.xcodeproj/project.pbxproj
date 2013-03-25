@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1547BE7516FFF6F300FACE27 /* Banter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547BE7416FFF6F300FACE27 /* Banter.m */; };
 		158BAB7116FDF3EF00D9D0E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158BAB7016FDF3EF00D9D0E5 /* UIKit.framework */; };
 		158BAB7316FDF3EF00D9D0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158BAB7216FDF3EF00D9D0E5 /* Foundation.framework */; };
 		158BAB7516FDF3EF00D9D0E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158BAB7416FDF3EF00D9D0E5 /* CoreGraphics.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1547BE7316FFF6F300FACE27 /* Banter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banter.h; sourceTree = "<group>"; };
+		1547BE7416FFF6F300FACE27 /* Banter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banter.m; sourceTree = "<group>"; };
 		158BAB6D16FDF3EF00D9D0E5 /* cribbage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cribbage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158BAB7016FDF3EF00D9D0E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		158BAB7216FDF3EF00D9D0E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -249,6 +252,8 @@
 				158BABC716FE00FF00D9D0E5 /* Match.m */,
 				158BABC916FE010700D9D0E5 /* MatchState.h */,
 				158BABCA16FE010800D9D0E5 /* MatchState.m */,
+				1547BE7316FFF6F300FACE27 /* Banter.h */,
+				1547BE7416FFF6F300FACE27 /* Banter.m */,
 			);
 			path = match;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				158BABE016FE016C00D9D0E5 /* Scoreboard.m in Sources */,
 				158BABE316FE08AA00D9D0E5 /* Street.m in Sources */,
 				158BABE616FE08C700D9D0E5 /* HandScorer.m in Sources */,
+				1547BE7516FFF6F300FACE27 /* Banter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +603,7 @@
 				158BABB216FDF3EF00D9D0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		158BABB316FDF3EF00D9D0E5 /* Build configuration list for PBXNativeTarget "cribbageTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +612,7 @@
 				158BABB516FDF3EF00D9D0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

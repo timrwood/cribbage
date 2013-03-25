@@ -13,6 +13,9 @@
 #import "Hand.h"
 
 
+@class Banter;
+
+
 @interface Player : NSObject <CardHolder> {
 @private;
     BOOL _gaveCardsToCrib;
@@ -40,6 +43,16 @@
 
 - (void)startDiscardToCrib;
 - (BOOL)gaveCardsToCrib:(Hand *)crib;
+
+
+#pragma mark -
+#pragma mark banter
+
+
+- (void)resetBanter;
+- (BOOL)canPlayBanter:(Banter *)banter;
+- (BOOL)didPlayBanter:(Banter *)banter;
+- (BOOL)didPassBanter;
 
 
 @end

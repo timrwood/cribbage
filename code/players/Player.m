@@ -6,7 +6,10 @@
 //  Copyright (c) 2013 Tim Wood. All rights reserved.
 //
 
+
 #import "Player.h"
+#import "Banter.h"
+
 
 @implementation Player
 
@@ -63,6 +66,27 @@
 
 - (void)giveCard:(Card *)card toHolder:(NSObject<CardHolder> *)holder {
     
+}
+
+
+#pragma mark -
+#pragma mark banter
+
+
+- (void)resetBanter {
+    
+}
+
+- (BOOL)canPlayBanter:(Banter *)banter {
+    return YES;
+}
+
+- (BOOL)didPlayBanter:(Banter *)banter {
+    return YES;
+}
+
+- (BOOL)didPassBanter {
+    return YES;
 }
 
 

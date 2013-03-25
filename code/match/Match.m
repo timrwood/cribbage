@@ -17,6 +17,8 @@
         _crib = [[Hand alloc] init];
         _street = [[Street alloc] init];
         
+        _banter = [[Banter alloc] init];
+        
         _scoreboard = [[Scoreboard alloc] init];
         
         _matchState = [[MatchState alloc] init];
@@ -32,12 +34,14 @@
     _player0 = player;
     [player setPlayerId:0];
     [player setScoreboard:_scoreboard];
+    [_banter setPlayer0:player];
 }
 
 - (void)setPlayer1:(Player *)player {
     _player1 = player;
     [player setPlayerId:1];
     [player setScoreboard:_scoreboard];
+    [_banter setPlayer1:player];
 }
 
 - (void)start {
@@ -94,7 +98,7 @@
 }
 
 - (void)updateDiscard {
-//    NSLog(@"updateDiscard");
+    NSLog(@"updateDiscard");
     if ([_player0 gaveCardsToCrib:_crib] && [_player1 gaveCardsToCrib:_crib]) {
         [_matchState changeStateTo:STATE_BANTER];
     }
@@ -107,12 +111,16 @@
 
 - (void)startBanter {
     NSLog(@"startBanter");
+    [_banter start];
     
 }
 
 - (void)updateBanter {
     NSLog(@"updateBanter");
-    
+    [banter update];
+    if ([_banter isFinished]) {
+        [_matchState changeStateTo:STATE_RESTORE_HANDS];
+    }
 }
 
 

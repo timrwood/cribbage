@@ -15,6 +15,7 @@
 #import "HandScorer.h"
 #import "Hand.h"
 #import "Street.h"
+#import "Banter.h"
 
 @interface Match : NSObject <MatchStateDelegate> {
 @private;
@@ -25,6 +26,8 @@
     MatchState *_matchState;
     
     Scoreboard *_scoreboard;
+    
+    Banter *_banter;
 }
 
 @property (nonatomic) Player *player0;
