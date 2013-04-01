@@ -74,7 +74,8 @@
 
 
 - (void)resetBanter {
-    
+    _didPassBanter = NO;
+    _cardForBanter = nil;
 }
 
 - (BOOL)canPlayBanter:(Banter *)banter {
@@ -82,11 +83,16 @@
 }
 
 - (BOOL)didPlayBanter:(Banter *)banter {
-    return YES;
+    if (_cardForBanter) {
+        [banter playCard:_cardForBanter fromPlayer:self];
+        _cardForBanter = nil;
+        return YES;
+    }
+    return NO;
 }
 
 - (BOOL)didPassBanter {
-    return YES;
+    return _didPassBanter;
 }
 
 

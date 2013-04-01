@@ -117,7 +117,7 @@
 
 - (void)updateBanter {
     NSLog(@"updateBanter");
-    [banter update];
+    [_banter update];
     if ([_banter isFinished]) {
         [_matchState changeStateTo:STATE_RESTORE_HANDS];
     }

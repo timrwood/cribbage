@@ -22,7 +22,8 @@
 }
 
 - (void)restart {
-    
+    [_activePlayer resetBanter];
+    [_otherPlayer resetBanter];
 }
 
 - (void)swapPlayers {
@@ -39,19 +40,30 @@
 - (void)update {
     if ([_activePlayer canPlayBanter:self]) {
         if ([_activePlayer didPlayBanter:self]) {
+            if (![_otherPlayer didPassBanter]) {
+                [self swapPlayers];
+            }
+        }
+    } else if ([_activePlayer didPassBanter]) {
+        if ([_otherPlayer didPassBanter]) {
+            [self restart];
+        } else {
             [self swapPlayers];
         }
-    } else if ([_otherPlayer canPlayBanter:self]) {
-        if ([_activePlayer didPassBanter]) {
-            [self swapPlayers];
-        }
-    } else if ([_activePlayer didPassBanter] && [_otherPlayer didPassBanter]) {
-        [self restart];
     }
 }
 
 - (BOOL)isFinished {
     return YES;
+}
+
+
+#pragma mark -
+#pragma mark playing cards
+
+
+- (void)playCard:(Card *)card fromPlayer:(Player *)player {
+    
 }
 
 

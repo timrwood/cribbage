@@ -21,8 +21,12 @@
     BOOL _gaveCardsToCrib;
 @protected;
     Hand *_hand;
+    
     Card *_cardForCrib0;
     Card *_cardForCrib1;
+    
+    Card *_cardForBanter;
+    BOOL _didPassBanter;
 }
 
 

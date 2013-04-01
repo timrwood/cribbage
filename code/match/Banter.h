@@ -37,4 +37,11 @@
 - (BOOL)isFinished;
 
 
+#pragma mark -
+#pragma mark playing cards
+
+
+- (void)playCard:(Card *)card fromPlayer:(Player *)player;
+
+
 @end
